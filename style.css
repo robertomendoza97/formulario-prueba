@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow Semi Condensed";
+    background: #fff;
+}
+.header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+
+    background: #002eff;
+    justify-content: space-between;
+}
+.logo {
+    color: #fff;
+    width: 47px;
+    height: 50px;
+    background: #002eff;
+    margin-left: 307px;
+}
+.anchorWrapper {
+    display: flex;
+    margin-right: 308px;
+    background: inherit;
+}
+.textFormulario {
+    margin-right: 30px;
+    background: inherit;
+    color: #fff;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.textListaFormulario {
+    background: inherit;
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.wrapperDivForm {
+    margin: 180px 0 446.5px 0;
+    display: flex;
+    justify-content: center;
+}
+hr {
+    margin: 40px 0 40px 0;
+}
+.wrapperForm {
+    width: 845px;
+    padding: 10px;
+    /* border: solid 1px #000; */
+}
+.titleForm {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+
+    color: #191919;
+}
+.pForm {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 39.5px;
+    color: #191919;
+}
+.subtitleForm {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: #002eff;
+    margin-bottom: 26px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wrapperFormControl {
+    display: flex;
+    flex-direction: column;
+}
+.margin-bottom {
+    margin-bottom: 26px;
+}
+.form-control {
+    height: 45px;
+    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    padding: 6px;
+    font-size: 20px;
+}
+.control-label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #191919;
+    margin-bottom: 10px;
+}
+.control-name {
+    width: 540px;
+}
+.control-rut {
+    width: 255px;
+}
+.same_width_control {
+    width: 255px;
+}
+.wrapperBtnSubmit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.btn_submit {
+    background: #ff3d00;
+    border-radius: 22.5px;
+    border: none;
+    width: 255px;
+    height: 45px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #ffffff;
+    cursor: pointer;
+}
+.alert-danger {
+    color: #ff0000;
+}
+.alert-succes {
+    color: #ffffff;
+    background-color: #00ff00;
+}
+.wrapper-alert {
+    margin-top: 30px;
+    background-color: #00ff00;
+    padding: 16px;
+    text-align: center;
+}
+.display-none {
+    display: none;
+}
+.title_header_list {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    width: 105px;
+    color: #191919;
+}
+.header_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+.reset {
+    margin: 0;
+}
+.text_list {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    width: 105px;
+    color: #191919;
+}
+.field_name {
+    width: 190px;
+}
+.container_list_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 29px 0 28px 0;
+}
+.icon_delete {
+    height: 24px;
+    font-weight: bold;
+    width: 105px;
+}
+.msg_footer {
+    padding: 31px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .form-group {
+        flex-direction: column;
+    }
+    .form-control {
+        width: 320px !important;
+        align-self: center;
+    }
+    .logo {
+        margin-left: 26px;
+    }
+    .anchorWrapper {
+        margin-right: 27px;
+    }
+    .header {
+        min-width: 375px;
+    }
+    .wrapperBtnSubmit {
+        justify-content: center;
+    }
+    .btn_submit {
+        width: 320px;
+    }
+    .wrapperForm {
+        width: 332px;
+        padding: 0;
+    }
+    .wrapperDivForm {
+        margin: 140px 0 100px 0;
+    }
+    .wrapperFormControl {
+        width: 320px;
+        margin-bottom: 16px;
+    }
+    .textFormulario {
+        text-decoration: underline;
+    }
+    .textListaFormulario {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>formulario Prueba</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Barlow Semi Condensed"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <image class="logo" src="./entel_logo.svg" />
+                <div class="anchorWrapper">
+                    <h2 id="anchor_header-form" class="textFormulario">
+                        Formulario
+                    </h2>
+                    <h2
+                        id="anchor_header-list_form"
+                        class="textListaFormulario"
+                    >
+                        Lista Formulario
+                    </h2>
+                </div>
+            </header>
+            <section id="form_page" class="wrapperDivForm">
+                <div class="wrapperForm">
+                    <h1 class="titleForm">Nuevo formulario</h1>
+                    <p class="pForm">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the bed
+                        industry's standard dummy text ever since.
+                    </p>
+                    <form id="form">
+                        <h2 class="subtitleForm">Datos del vendedor:</h2>
+                        <div class="form-group">
+                            <div class="wrapperFormControl">
+                                <label for="name" class="control-label">
+                                    Nombre y apellido</label
+                                >
+                                <input
+                                    name="name"
+                                    id="name"
+                                    type="text"
+                                    class="form-control control-name"
+                                />
+                            </div>
+                            <div class="wrapperFormControl">
+                                <label for="rut" class="control-label">
+                                    Rut Vendedor (Sin puntos ni guion).
+                                </label>
+                                <input
+                                    name="rut"
+                                    id="rut"
+                                    type="number"
+                                    class="form-control control-rut"
+                                    onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                />
+                            </div>
+                        </div>
+                        <hr />
+                        <h2 class="subtitleForm">Datos del vehiculo:</h2>
+                        <div class="form-group">
+                            <div class="wrapperFormControl margin-bottom">
+                                <label for="patente" class="control-label">
+                                    Patente vehiculo
+                                </label>
+                                <input
+                                    name="patente"
+                                    maxlength="6"
+                                    type="text"
+                                    id="patente"
+                                    class="form-control same_width_control"
+                                />
+                            </div>
+                            <div class="wrapperFormControl">
+                                <label for="marca" class="control-label">
+                                    Marca vehiculo
+                                </label>
+                                <select
+                                    name="marca"
+                                    type="text"
+                                    id="marca"
+                                    class="form-control same_width_control"
+                                >
+                                    <option value="">
+                                        SELECCIONE UNA MARCA
+                                    </option>
+                                    <option value="chery">Chery</option>
+                                    <option value="hyundai">Hyundai</option>
+                                    <option value="subaru">Subaru</option>
+                                    <option value="jeep">Jeep</option>
+                                    <option value="bmw">BMW</option>
+                                </select>
+                            </div>
+                            <div class="wrapperFormControl">
+                                <label for="modelo" class="control-label">
+                                    Modelo vehiculo
+                                </label>
+                                <select
+                                    name="modelo"
+                                    type="text"
+                                    id="modelo"
+                                    class="form-control same_width_control"
+                                >
+                                    <option value="">
+                                        SELECCIONE UN MODELO
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="wrapperFormControl">
+                                <label for="color" class="control-label">
+                                    Color vehiculo
+                                </label>
+                                <select
+                                    name="color"
+                                    type="text"
+                                    id="color"
+                                    class="form-control same_width_control"
+                                >
+                                    <option value="">
+                                        SELECCIONE UN COLOR
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="wrapperBtnSubmit">
+                            <button
+                                id="btn_submit"
+                                type="submit"
+                                class="btn_submit"
+                            >
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section id="list_form_page" class="display-none wrapperDivForm">
+                <div class="wrapperForm">
+                    <h2 class="titleForm">Lista formulario</h2>
+                    <p class="pForm">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the bed
+                        industry's standard dummy text ever since.
+                    </p>
+                    <div>
+                        <div class="header_list">
+                            <h3 class="title_header_list field_name">Nombre</h3>
+                            <h3 class="title_header_list field_rut">
+                                <span>Rut</span><br /><span>vendedor</span>
+                            </h3>
+                            <h3 class="title_header_list field_patente">
+                                <span>Patente</span><br /><span>vehiculo</span>
+                            </h3>
+                            <h3 class="title_header_list field_marca">
+                                <span>Marca</span><br />
+                                <span>vehiculo</span>
+                            </h3>
+                            <h3 class="title_header_list field_modelo">
+                                <span>Modelo</span><br /><span>vehiculo</span>
+                            </h3>
+                            <h3 class="title_header_list field_color">
+                                <span>Color</span><br /><span>vehiculo</span>
+                            </h3>
+                            <h3 class="title_header_list field_delete">
+                                Eliminar
+                            </h3>
+                        </div>
+                        <hr class="reset" />
+                    </div>
+                    <div id="container_list_content"></div>
+                </div>
+            </section>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
